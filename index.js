@@ -46,7 +46,6 @@ function addExecMod () {
         } else {
             console.log('[2/2] Add executive authority to gitpush.sh success!')
             console.log('Then you can type the under command and press the Enter:')
-            console.log('')
             console.log('./gitpush.sh')
         }
     })
