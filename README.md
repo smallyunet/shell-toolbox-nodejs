@@ -2,7 +2,7 @@
 ## Install
 
 ```
-npm install -g git+https://github.com/smallyunet/shell-toolbox-nodejs.git
+npm install -g --force git+https://github.com/smallyunet/shell-toolbox-nodejs.git
 ```
 
 ## Usage
