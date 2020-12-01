@@ -29,3 +29,9 @@ smallyu@smallyu-PC:~/nodejs$ ./gitpush.sh
 smallyu@smallyu-PC:~/nodejs$
 ```
 
+or:
+
+``` shell
+smallyu@smallyu-PC:~/nodejs$ ./gitpush.sh 'the commit content'
+smallyu@smallyu-PC:~/nodejs$
+```
