@@ -7,6 +7,22 @@ npm install -g --force git+https://github.com/smallyunet/shell-toolbox-nodejs.gi
 
 ## Usage
 
+``` shell
+smallyu@smallyu-PC:~/nodejs$ st -h
+
+        gitpush          Gernerator a gitpush shell script.
+    
 ```
-st
+
+You can use it like this:
+
 ```
+smallyu@smallyu-PC:~/nodejs$ st gitpush
+[1/2] Generator gitpush.sh success!
+[2/2] Add executive authority to gitpush.sh success!
+Then you can type the under command and press the Enter:
+./gitpush.sh
+```
+
+Then:
+
