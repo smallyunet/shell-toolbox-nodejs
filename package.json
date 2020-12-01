@@ -16,6 +16,7 @@
     "url" : "https://github.com/smallyunet/shell-toolbox-nodejs.git"
   },
   "publishConfig": {
+    "name": "@smallyunet/shell-toolbox-nodejs",
     "registry": "https://npm.pkg.github.com/"
   }
 }
