@@ -21,7 +21,7 @@ else if (con2) {
         if (err) {
             console.log(err)
         } else {
-            console.log('Generator gitpush.sh success!')
+            console.log('[1/2] Generator gitpush.sh success!')
             addExecMod()
         }
     })
@@ -44,7 +44,10 @@ function addExecMod () {
         if (error) {
             console.log(error)
         } else {
-            console.log('Add executive authority to gitpush.sh success!')
+            console.log('[2/2] Add executive authority to gitpush.sh success!')
+            console.log('Then you can type the under command and press the Enter:')
+            console.log('')
+            console.log('./gitpush.sh')
         }
     })
 }
