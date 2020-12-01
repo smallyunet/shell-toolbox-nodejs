@@ -10,6 +10,7 @@ npm install -g --force git+https://github.com/smallyunet/shell-toolbox-nodejs.gi
 ``` shell
 smallyu@smallyu-PC:~/nodejs$ st -h
     gitpus    Gernerator a gitpush shell script.
+smallyu@smallyu-PC:~/nodejs$
 ```
 
 You can use it like this:
