@@ -34,9 +34,7 @@ else {
 
 
 function printHelp() {
-    console.log(`
-        gitpush \t Gernerator a gitpush shell script.
-    `)
+    console.log(`    gitpush    Gernerator a gitpush shell script.`)
 }
 
 function addExecMod () {
