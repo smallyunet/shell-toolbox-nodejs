@@ -1,0 +1,21 @@
+{
+  "name": "shell-toolbox-nodejs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "st": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "smallyu",
+  "license": "ISC",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/smallyunet/shell-toolbox-nodejs.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
