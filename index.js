@@ -123,7 +123,7 @@ printf "# Index\\n\\n\${tree}\\n" > TREE.md
 function getStartShellString(statement) {
     return `
 str=$"\\n"
-nohup ${statement} >/dev/null 2>&1 &
+nohup ${statement} &
 sstr=$(echo -e $str)
 echo $sstr
 `
