@@ -9,8 +9,9 @@ npm install -g --force git+https://github.com/smallyunet/shell-toolbox-nodejs.gi
 
 ``` shell
 smallyu@smallyu-PC:~/nodejs$ st -h
-    gitpush    Gernerator a gitpush shell script.
-    tree       Gernerator a tree shell script.
+    gitpush       Gernerator a gitpush shell script.
+    tree          Gernerator a tree shell script.
+    startShell    Gernerator a start and status shell script.
 smallyu@smallyu-PC:~/nodejs$
 ```
 

@@ -11,6 +11,7 @@ let con1 = args.length <= 0
 
 let con2 = args[0] == 'gitpush'
 let con3 = args[0] == 'tree'
+let con4 = args[0] == 'startShell'
 
 
 if (con1) {
@@ -42,6 +43,35 @@ else if (con3) {
     })
 }
 
+else if (con4) {
+    if (args.length < 2) {
+        console.log(`Please input second arguement that will be execute.`)
+    } else {
+        console.log(`Generator start.sh ...`)
+        let statement = args[1]
+        let filename = 'start.sh'
+        fs.writeFile(filename, getStartShellString(statement), err => {
+            if (err) {
+                console.log(err)
+            } else {
+                console.log(`[1/2] Generator ${filename} success!`)
+                addExecMod(filename)
+
+                console.log(`Generator status.sh ...`)
+                filename = 'status.sh'
+                fs.writeFile(filename, getStatusShellString(statement), err => {
+                    if (err) {
+                        console.log(err)
+                    } else {
+                        console.log(`[1/2] Generator ${filename} success!`)
+                        addExecMod(filename)
+                    }
+                })
+            }
+        })
+    }
+}
+
 else {
     console.log('You are wrong.')
     printHelp()
@@ -49,8 +79,9 @@ else {
 
 
 function printHelp() {
-    console.log(`    gitpush    Gernerator a gitpush shell script.`)
-    console.log(`    tree       Gernerator a tree shell script.`)
+    console.log(`    gitpush       Gernerator a gitpush shell script.`)
+    console.log(`    tree          Gernerator a tree shell script.`)
+    console.log(`    startShell    Gernerator a start and status shell script.`)
 }
 
 function addExecMod (filename) {
@@ -79,6 +110,7 @@ git push
 `
 }
 
+
 function getTreeShellString() {
     return `
 tree=$(tree -tf --noreport -I '*~|*.md|*.sh|*.yml' --charset ascii -v $1 |
@@ -88,3 +120,17 @@ printf "# Index\\n\\n\${tree}\\n" > TREE.md
 }
 
 
+function getStartShellString(statement) {
+    return `
+str=$"\\n"
+nohup ${statement} >/dev/null 2>&1 &
+sstr=$(echo -e $str)
+echo $sstr
+`
+}
+
+function getStatusShellString(statement) {
+    return `
+ps -ef | grep -v 'grep' | grep ${statement}
+`
+}
