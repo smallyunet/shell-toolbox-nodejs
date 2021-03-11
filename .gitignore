@@ -1,3 +1,7 @@
 .npmrc
 status.sh
 start.sh
+stop.sh
+test.sh
+*.jar
+*.out

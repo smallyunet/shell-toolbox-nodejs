@@ -1,6 +1,6 @@
 {
   "name": "@smallyunet/shell-toolbox-nodejs",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -12,8 +12,8 @@
   "author": "smallyu",
   "license": "ISC",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/smallyunet/shell-toolbox-nodejs.git"
+    "type": "git",
+    "url": "https://github.com/smallyunet/shell-toolbox-nodejs.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
